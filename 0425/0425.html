@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 連結JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+
+<!-- 連結isotope -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<style>
+    .filters{
+        text-align:center;
+    }
+    .grid {
+    
+    left: 2.5%;
+    
+    }
+    
+    .button{
+    width: 120px;
+    height: 50px;
+    margin: 3px;
+    text-decoration: none;
+    background-color: #1F2531;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    
+    }
+    
+    
+    .button:hover{
+    background-color: #393e47;
+    }
+    
+    .button.active, .button.is-checked{
+    background-color: #982F30;
+    
+    }
+    
+    
+    .grid img{
+    width: 100%;
+    height: 100%;
+    
+    }
+    
+    .items{
+    width: 250px;
+    height: 450px;
+    margin: 0 5px;
+    float: left;
+    
+    }
+    
+    div.text {
+         
+         position: absolute;
+         background-color: rgb(14, 13, 13);
+         top: 65%;
+       
+         opacity: 0.7;
+         text-align: center;
+         width: 100%;
+         height: auto;
+         letter-spacing: 1px;
+        
+       }
+       div.desc {
+          padding: 0 5px;
+          text-align: left;
+          letter-spacing: 1px;
+          color: color: rgb(66, 66, 66);
+          line-height: 25px;
+        }
+    
+        div.gallery  {
+          margin: 5px;
+          border: 1px solid rgb(248, 247, 247);
+          
+          
+          opacity:1;
+          position: relative;
+          border-radius: 4px;
+        
+        }
+        div.gallery:hover {
+          border: 1px solid rgb(92, 91, 91);
+          opacity:0.8;
+          box-shadow:3px 3px  rgb(75, 75, 75);
+          
+          
+        }
+        
+    
+    
+    </style>
+    
+
+<!-- 按鈕 -->
+<div class="filters">
+
+<button class="button" data-filter=".conference">研討會</button>
+<button class="button" data-filter=".talk">Chass Talk</button>
+<button class="button" data-filter=".workshop">工作坊</button>
+<button class="button" data-filter=".course">培力課程</button>
+<!--
+<button class="button" data-filter=".workshop">工作坊</button>
+<button class="button" data-filter=".lecture">專題演講</button>
+<button class="button" data-filter=".drama">戲劇表演</button>
+<button class="button" data-filter=".exhibition">展覽</button>
+<button class="button" data-filter=".concert">音樂會</button>
+ -->
+</div>
+
+<hr/>
+<!-- 圖示 -->
+
+<div class="grid">
+
+
+    <div class="items conference"> 
+<div class="gallery">
+    <a target="_blank" href="https://chass.ncku.edu.tw/p/412-1011-27963.php?Lang=zh-tw">
+      <img src="https://chass.ncku.edu.tw/var/file/11/1011/img/4479/295094375.jpg" alt="Cinque Terre" width="600" height="400">
+      <div class="text"><h4 style="color: white;">詳細介紹</h4></div>
+    </a>
+    <div class="desc">
+      多聲道的台灣共同體<br/>
+        日期︱2022年8月27日-28日<br/>
+        地點︱成功大學
+    </div>
+</div>
+</div>
+
+<div class="items workshop"> 
+<div class="gallery">
+    <a target="_blank" href="https://chass.ncku.edu.tw/p/412-1011-28550.php?Lang=zh-tw">
+      <img src="https://chass.ncku.edu.tw/var/file/11/1011/img/386972991.jpg" alt="Cinque Terre" width="600" height="400">
+      <div class="text"><h4 style="color: white;">詳細介紹</h4></div>
+    </a>
+    <div class="desc">
+      後冷戰時期流亡藏人、維吾爾人與香港難民的恢復、抵抗與再度安居<br/>
+        日期︱2022年6月10日<br/>
+        地點︱成功大學&線上
+    </div>
+</div>
+</div>
+
+<div class="items course"> 
+    <div class="gallery">
+        <a target="_blank" href="https://chass.ncku.edu.tw/p/412-1011-28558.php?Lang=zh-tw">
+          <img src="https://chass.ncku.edu.tw/var/file/11/1011/img/485706483.jpg" alt="Cinque Terre" width="600" height="400">
+          <div class="text"><h4 style="color: white;">詳細介紹</h4></div>
+        </a>
+        <div class="desc">
+          計畫撰寫與實務經驗分享<br/>
+            日期︱2022年5月11日<br/>
+            地點︱台南市立南瀛親子館
+        </div>
+    </div>
+    </div>
+
+    <div class="items course"> 
+        <div class="gallery">
+            <a target="_blank" href="https://chass.ncku.edu.tw/p/412-1011-28557.php?Lang=zh-tw">
+              <img src="https://chass.ncku.edu.tw/var/file/11/1011/img/485706483.jpg" alt="Cinque Terre" width="600" height="400">
+              <div class="text"><h4 style="color: white;">詳細介紹</h4></div>
+            </a>
+            <div class="desc">
+                中高齡婦女相關議題<br/>
+                日期︱2022年4月27日<br/>
+                地點︱台南市社會福利綜合大樓
+            </div>
+        </div>
+        </div>
+
+
+<div class="items talk"> 
+<div class="gallery">
+    <a target="_blank" href="https://chass.ncku.edu.tw/p/412-1011-28279.php?Lang=zh-tw">
+      <img src="https://chass.ncku.edu.tw/var/file/11/1011/img/289616618.jpg" alt="Cinque Terre" width="600" height="400">
+      <div class="text"><h4 style="color: white;">詳細介紹</h4></div>
+    </a>
+    <div class="desc">
+      敏感三月--藏人抗暴運動中的女性<br/>
+        日期︱2022年3月8日<br/>
+        地點︱線上
+    </div>
+</div>
+</div>
+
+</div>
+
+
+<!-- 連結JS -->
+<script>
+
+var $grid = $(".grid").isotope({
+    itemSelector: ".items"
+});
+
+// 記憶所選的filter
+var filters = [];
+
+// 按鈕連結
+
+$(".filters").on("click", "button", function(event) {
+    var $target = $(event.currentTarget);
+    $target.toggleClass("is-checked");
+    // 改變CSS
+    var isChecked = $target.hasClass("is-checked");
+    // 抓data-filter
+    var filter = $target.attr("data-filter");
+
+    if (isChecked) {
+        addFilter(filter);
+    } else {
+        removeFilter(filter);
+    }
+    // 執行isotope
+    $grid.isotope({
+        filter: filters.join(',')
+    });
+
+    function addFilter(filter) {
+        if (filters.indexOf(filter) == -1) {
+            filters.push(filter);
+        }
+    }
+
+    function removeFilter(filter) {
+        if (filter.indexOf(filter) != -1) {
+            filters.splice(filter.indexOf(filter), 1);
+        }
+    }
+
+
+});
+
+
+
+</script>
+
+<script src="filter.js"></script>
+    
+</body>
+</html>

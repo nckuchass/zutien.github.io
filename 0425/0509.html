@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<!-- 連結isotope -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<style>
+.filters{
+    text-align:center;
+}
+.grid {
+  
+
+left: 6.5%;
+
+}
+
+.button{
+width: 120px;
+height: 50px;
+margin: 3px;
+text-decoration: none;
+background-color: #1F2531;
+color: white;
+border-radius: 4px;
+font-size: 14px;
+
+}
+
+
+.button:hover{
+background-color: #393e47;
+}
+
+.button.active, .button.is-checked{
+background-color: #982F30;
+
+}
+
+
+.grid img{
+width: 100%;
+height: 100%;
+
+}
+
+.items{
+width: 400px;
+height: 400px;
+margin: 0 5px;
+float: left;
+
+
+}
+
+div.text {
+     
+     position: absolute;
+     background-color: rgb(14, 13, 13);
+     top: 65%;
+   
+     opacity: 0.7;
+     text-align: center;
+     width: 100%;
+     height: auto;
+     letter-spacing: 1px;
+    
+   }
+   div.desc {
+      padding: 0 5px;
+      text-align: left;
+      letter-spacing: 1px;
+      color: color: rgb(66, 66, 66);
+      line-height: 25px;
+    }
+
+    div.gallery  {
+      margin: 5px;
+      border: 1px solid rgb(248, 247, 247);
+      
+      
+      opacity:1;
+      position: relative;
+      border-radius: 4px;
+      
+    
+    }
+    div.gallery:hover {
+      border: 1px solid rgb(92, 91, 91);
+      opacity:0.8;
+      box-shadow:3px 3px  rgb(75, 75, 75);
+      
+      
+    }
+    .all0512{
+        text-align: center;
+    }
+
+    
+
+
+</style>
+
+
+
+
+<!-- 按鈕 -->
+<div class="all0512">
+<div class="filters">
+
+<button class="button" data-filter=".gray">灰白色</button>
+<button class="button" data-filter=".red">朱干紅</button>
+<button class="button" data-filter=".blue">深藍色</button>
+<button class="button" data-filter=".black">黑色</button>
+<!--
+<button class="button" data-filter=".exhibition">展覽</button>
+<button class="button" data-filter=".concert">音樂會</button>
+-->
+</div>
+<hr/>
+
+<!-- 圖示 -->
+
+<div class="grid">
+
+<div class="items gray"> 
+    <div class="gallery">
+    
+        <img src="mask_ 1.jpg" alt="Cinque Terre" width="600" height="400">
+        <div class="text"><h4 style="color: rgb(231, 227, 227);">編號1
+        </h4></div>
+       
+        
+    </div>      
+</div>
+
+<div class="items gray"> 
+<div class="gallery">
+
+  <img src="mask-05.jpg" alt="Cinque Terre" width="600" height="400">
+  <div class="text"><h4 style="color: white;">編號2</h4></div>
+
+
+</div>
+</div>
+
+<div class="items red"> 
+    <div class="gallery">
+    
+      <img src="mask-06.jpg" alt="Cinque Terre" width="600" height="400">
+      <div class="text"><h4 style="color: white;">編號3</h4></div>
+    
+    
+    </div>
+    </div>
+
+    <div class="items black"> 
+        <div class="gallery">
+        
+          <img src="mask-07.jpg" alt="Cinque Terre" width="600" height="400">
+          <div class="text"><h4 style="color: white;">編號4</h4></div>
+        
+        
+        </div>
+        </div>
+
+        <div class="items blue"> 
+            <div class="gallery">
+            
+              <img src="mask-08.jpg" alt="Cinque Terre" width="600" height="400">
+              <div class="text"><h4 style="color: white;">編號5</h4></div>
+            
+            
+            </div>
+            </div>
+
+            <div class="items gray"> 
+                <div class="gallery">
+                
+                  <img src="mask-09.jpg" alt="Cinque Terre" width="600" height="400">
+                  <div class="text"><h4 style="color: white;">編號6</h4></div>
+                
+                
+                </div>
+                </div>
+
+                <div class="items red"> 
+                    <div class="gallery">
+                    
+                      <img src="mask-10.jpg" alt="Cinque Terre" width="600" height="400">
+                      <div class="text"><h4 style="color: white;">編號7</h4></div>
+                    
+                    
+                    </div>
+                    </div>
+
+                    <div class="items black"> 
+                        <div class="gallery">
+                        
+                          <img src="mask-11.jpg" alt="Cinque Terre" width="600" height="400">
+                          <div class="text"><h4 style="color: white;">編號8</h4></div>
+                        
+                        
+                        </div>
+                        </div>
+
+                        <div class="items blue"> 
+                            <div class="gallery">
+                            
+                              <img src="mask-12.jpg" alt="Cinque Terre" width="600" height="400">
+                              <div class="text"><h4 style="color: white;">編號9</h4></div>
+                            
+                            
+                            </div>
+                            </div>
+
+                            <div class="items gray"> 
+                                <div class="gallery">
+                                
+                                  <img src="mask-13.jpg" alt="Cinque Terre" width="600" height="400">
+                                  <div class="text"><h4 style="color: white;">編號10</h4></div>
+                                
+                                
+                                </div>
+                                </div>
+
+                                <div class="items red"> 
+                                    <div class="gallery">
+                                    
+                                      <img src="mask-14.jpg" alt="Cinque Terre" width="600" height="400">
+                                      <div class="text"><h4 style="color: white;">編號11</h4></div>
+                                    
+                                    
+                                    </div>
+                                    </div>
+
+                                    <div class="items black"> 
+                                        <div class="gallery">
+                                        
+                                          <img src="mask-15.jpg" alt="Cinque Terre" width="600" height="400">
+                                          <div class="text"><h4 style="color: white;">編號12</h4></div>
+                                        
+                                        
+                                        </div>
+                                        </div>
+
+                                        <div class="items blue"> 
+                                            <div class="gallery">
+                                            
+                                              <img src="mask-16.jpg" alt="Cinque Terre" width="600" height="400">
+                                              <div class="text"><h4 style="color: white;">編號13</h4></div>
+                                            
+                                            
+                                            </div>
+                                            </div>
+
+                                            <div class="items gray"> 
+                                                <div class="gallery">
+                                                
+                                                  <img src="mask-17.jpg" alt="Cinque Terre" width="600" height="400">
+                                                  <div class="text"><h4 style="color: white;">編號14</h4></div>
+                                                
+                                                
+                                                </div>
+                                                </div>
+
+                                                <div class="items red"> 
+                                                    <div class="gallery">
+                                                    
+                                                      <img src="mask-18.jpg" alt="Cinque Terre" width="600" height="400">
+                                                      <div class="text"><h4 style="color: white;">編號15</h4></div>
+                                                    
+                                                    
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="items black"> 
+                                                        <div class="gallery">
+                                                        
+                                                          <img src="mask-19.jpg" alt="Cinque Terre" width="600" height="400">
+                                                          <div class="text"><h4 style="color: white;">編號16</h4></div>
+                                                        
+                                                        
+                                                        </div>
+                                                        </div>
+
+                                                        <div class="items blue"> 
+                                                            <div class="gallery">
+                                                            
+                                                              <img src="mask-20.jpg" alt="Cinque Terre" width="600" height="400">
+                                                              <div class="text"><h4 style="color: white;">編號17</h4></div>
+                                                            
+                                                            
+                                                            </div>
+                                                            </div>
+
+                                                            <div class="items gray"> 
+                                                                <div class="gallery">
+                                                                
+                                                                  <img src="mask-21.jpg" alt="Cinque Terre" width="600" height="400">
+                                                                  <div class="text"><h4 style="color: white;">編號18</h4></div>
+                                                                
+                                                                
+                                                                </div>
+                                                                </div>
+
+                                                                <div class="items red"> 
+                                                                    <div class="gallery">
+                                                                    
+                                                                      <img src="mask-22.jpg" alt="Cinque Terre" width="600" height="400">
+                                                                      <div class="text"><h4 style="color: white;">編號19</h4></div>
+                                                                    
+                                                                    
+                                                                    </div>
+                                                                    </div>
+
+                                                                    <div class="items black"> 
+                                                                        <div class="gallery">
+                                                                        
+                                                                          <img src="mask-23.jpg" alt="Cinque Terre" width="600" height="400">
+                                                                          <div class="text"><h4 style="color: white;">編號20</h4></div>
+                                                                        
+                                                                        
+                                                                        </div>
+                                                                        </div>
+
+                                                                        <div class="items blue"> 
+                                                                            <div class="gallery">
+                                                                            
+                                                                              <img src="mask-24.jpg" alt="Cinque Terre" width="600" height="400">
+                                                                              <div class="text"><h4 style="color: white;">編號21</h4></div>
+                                                                            
+                                                                            
+                                                                            </div>
+                                                                            </div>
+
+                                                                            <div class="items gray"> 
+                                                                                <div class="gallery">
+                                                                                
+                                                                                  <img src="mask-25.jpg" alt="Cinque Terre" width="600" height="400">
+                                                                                  <div class="text"><h4 style="color: white;">編號22</h4></div>
+                                                                                
+                                                                                
+                                                                                </div>
+                                                                                </div>
+
+                                                                                <div class="items red"> 
+                                                                                    <div class="gallery">
+                                                                                    
+                                                                                      <img src="mask-26.jpg" alt="Cinque Terre" width="600" height="400">
+                                                                                      <div class="text"><h4 style="color: white;">編號23</h4></div>
+                                                                                    
+                                                                                    
+                                                                                    </div>
+                                                                                    </div>
+
+                                                                                    <div class="items black"> 
+                                                                                        <div class="gallery">
+                                                                                        
+                                                                                          <img src="mask-27.jpg" alt="Cinque Terre" width="600" height="400">
+                                                                                          <div class="text"><h4 style="color: white;">編號24</h4></div>
+                                                                                        
+                                                                                        
+                                                                                        </div>
+                                                                                        </div>
+
+                                                                                        <div class="items blue"> 
+                                                                                            <div class="gallery">
+                                                                                            
+                                                                                              <img src="mask-28.jpg" alt="Cinque Terre" width="600" height="400">
+                                                                                              <div class="text"><h4 style="color: white;">編號25</h4></div>
+                                                                                            
+                                                                                            
+                                                                                            </div>
+                                                                                            </div>
+                                                                                         
+                                                                                            
+</div>
+</div>>
+
+<iframe src="https://script.google.com/macros/s/AKfycbzzJ66yAGPe7ls3b5CBVQiPoHYD6Flcby6KEwUGhM8WquedW3pNCW4DInrpJ44Ak1HA-g/exec" frameborder="0" marginheight="0" marginwidth="0"
+width="1200px" height="500px" scrolling="auto">
+</iframe>
+
+
+
+
+
+
+
+
+<!-- 連結JS -->
+<script>
+
+var $grid = $(".grid").isotope({
+    itemSelector: ".items"
+});
+
+// 記憶所選的filter
+var filters = [];
+
+// 按鈕連結
+
+$(".filters").on("click", "button", function(event) {
+    var $target = $(event.currentTarget);
+    $target.toggleClass("is-checked");
+    // 改變CSS
+    var isChecked = $target.hasClass("is-checked");
+    // 抓data-filter
+    var filter = $target.attr("data-filter");
+
+    if (isChecked) {
+        addFilter(filter);
+    } else {
+        removeFilter(filter);
+    }
+    // 執行isotope
+    $grid.isotope({
+        filter: filters.join(',')
+    });
+
+    function addFilter(filter) {
+        if (filters.indexOf(filter) == -1) {
+            filters.push(filter);
+        }
+    }
+
+    function removeFilter(filter) {
+        if (filter.indexOf(filter) != -1) {
+            filters.splice(filter.indexOf(filter), 1);
+        }
+    }
+
+
+});
+
+
+
+</script>
+
+<script src="filter.js"></script>
+    
+</body>
+</html>
